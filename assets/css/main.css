@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  background-color: #f1f1f1;
+  height: 60px;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.h-title {
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.h-actions {
+  margin-left: auto;
+}
+
+.h-actions a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #767777;
+  background-color: white;
+  border-radius: 3px;
+  padding: 4px 10px;
+  font-size: 13px;
+  box-shadow: 0 1px 5px -1px #989898;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #ffffff;
+}
+
+.sidebar-menu {
+      background-color: #ffffff;
+
+  padding: 0 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-label {
+  color: #888888;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.sidebar-menu a {
+  font-size: 17px;
+  text-decoration: none;
+  color: black;
+  border-radius: 0 3px 3px 0;
+  margin-left: -20px;
+  padding: 5px;
+  padding-left: 20px;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  border-top: 1px solid #d0d0d0;
+}
+
+.content-top {
+  border-bottom: 1px solid #d0d0d0;
+  padding: 10px 20px;
+  background-color: #fbfbfb;
+}
+
+.content-top h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.content-bottom {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.messages {
+  flex: 1;
+  border-bottom: 1px solid #d0d0d0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.message-details {
+  font-size: 12px;
+  color: #929292;
+}
+
+.message-details .pop {
+  margin-right: 10px;
+}
+
+.pop {
+  color: #2196F3;
+}
+
+.message-content {
+  background-color: #f1f1f1;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 15px;
+  border: 1px solid #cecece;
+}
+
+.compose {
+  display: flex;
+  position: relative;
+}
+
+.compose textarea {
+  width: 100%;
+  border: 0;
+  resize: vertical;
+  height: 100px;
+  min-height: 70px;
+  padding: 10px 13px;
+  font-size: 15px;
+  border: 2px solid white;
+  outline: 0;
+  transition: all .3s;
+}
+
+.compose textarea:focus {
+  border: 2px solid #d0d0d0;
+}
+
+.compose a {
+  position: absolute;
+  z-index: 5;
+  top: 20px;
+  right: 20px;
+  text-decoration: none;
+  color: #767777;
+  background-color: white;
+  border-radius: 3px;
+  padding: 4px 10px;
+  font-size: 13px;
+  box-shadow: 0 1px 5px -1px #989898;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d0d0d0;
+  width: 50%;
+  margin-top: 20px;
+  align-self: center;
+  border-radius: 3px;
+  padding: 20px;
+  background-color: #fbfbfb;
+}
+
+.input-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-row label {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #8c8c8c;
+}
+
+.input-row input {
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  border: 0;
+  box-shadow: 0 1px 5px -1px #989898;
+  outline: 0;
+}
+
+.form-submit {
+  width: fit-content;
+  background-color: #2196F3;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 17px;
+  box-shadow: 0 1px 5px -1px #989898;
+}
+
+.general-text {
+  margin: 20px;
+  font-size: 15px;
+}
+
+.welcome-message {
+  text-align: center;
+  font-size: 30px;
+  margin: 40px;
+  font-weight: 600;
+  color: #2196F3;
+}
+
+.welcome-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.welcome-actions a {
+  width: fit-content;
+  background-color: #f1f1f1;
+  margin: 10px;
+  margin-top: 0;
+  padding: 10px 15px;
+  border-radius: 3px;
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  box-shadow: 0 1px 5px -1px #989898;
+}
+
+.welcome-description {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 18px;
+  color: #797979;
+}
